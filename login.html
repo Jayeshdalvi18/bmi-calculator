@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">BMI Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to the BMI Calculator</h1>
+            <p>Check your Body Mass Index and improve your health!</p>
+            <a href="index.html" class="cta-btn">Start Now</a>
+        </div>
+
+        <!-- Login box section -->
+        <div class="login-box">
+            <h3>Login</h3>
+            <required> <label for="username">Username:</label></required>
+            <input type="text" id="username" placeholder="Enter your name">
+           <required><label for="gender">Gender:</label></required> 
+            <select id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <button onclick="loginUser()">Login</button>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About BMI Calculator</h2>
+        <p>The BMI Calculator is a tool to help you determine your body mass index (BMI) based on your height and weight. It's a great way to understand your overall health and fitness level. The result is categorized into underweight, normal weight, overweight, or obesity, according to standard health guidelines.</p>
+    </section>
+
+    <section id="features" class="features-section">
+        <h2>Features</h2>
+        <ul>
+            <li>Choose Metric or Imperial units.</li>
+            <li>Instantly calculate your BMI results.</li>
+            <li>Receive health advice from BMI</li>
+            <li>Contact expert nutritionists for guidance.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us at <a href="mailto:info@bmicalculator.com">info@bmicalculator.com</a></p>
+    </section>
+
+    <footer>
+        <p>2024 BMI Calculator | Designed for your health & fitness</p>
+    </footer>
+
+    <script src="home-script.js"></script>
+</body>
+</html>

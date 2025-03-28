@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator with Choice of Units</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form id="bmiForm">
+            <div class="unit-select">
+                <label>
+                    <input type="radio" name="units" value="metric" checked onclick="updatePlaceholders()"> Metric (kg, cm)
+                </label>
+                <label>
+                    <input type="radio" name="units" value="imperial" onclick="updatePlaceholders()"> Imperial (lbs, inches)
+                </label>
+            </div>
+
+            <div class="input-group">
+                <label for="weight">Weight:</label>
+                <input type="number" id="weight" placeholder="Enter your weight" required>
+            </div>
+
+            <div class="input-group">
+                <label for="height">Height:</label>
+                <input type="number" id="height" placeholder="Enter your height" required>
+            </div>
+
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+            <button type="button" onclick="refreshPage()">Refresh</button>
+        </form>
+        <div id="result"></div>
+        <div id="advice"></div>
+        <button type="button" onclick="contactDoctor()">Contact Doctor</button>
+    </div>
+
+    <!-- Modal for Doctor Information -->
+    <div id="doctorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDoctorTab()">&times;</span>
+            <h2>Contact: Dr Pooja Sharma</h2>
+            <p>Nutritionist|| Weight Management || Life Style Expert</p>
+            <p>Location: Hiranandani Gardens, Powai, Mumbai, Maharashtra 400076</p>
+            <p>Phone: +91 8898287777</p>
+            <p>Email: <a href="mailto:drpooja@example.com">drpoojasharma@mail.com</a></p>
+            <p>Website: <a href="https://www.drpoojasharma.com/contact" target="_blank">www.drpoojanutritionist.com</a></p>
+            <p>Practo: <a href="https://www.practo.com/mumbai/clinic/dr-pooja-sharma-3-powai?" target="_blank">www.practo.com/dr-pooja-sharma</a></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
